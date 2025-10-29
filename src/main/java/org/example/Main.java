@@ -25,7 +25,7 @@ public class Main {
         // Ascertain which row contains information about the vendor
         System.out.println("Ascertain which row contains information about the vendor: Fujitsu Siemens");
         for (Data.Table table : data.getTables()) {
-            int index = data.getRowIndexForVendorCountryAndPeriod(table.getCountry(), table.getPeriod(), "Fujitsu Siemens");
+            int index = data.getRowIndexForVendorCountryAndPeriod("Fujitsu Siemens", table.getCountry(), table.getPeriod());
             System.out.printf(" Country: %s Period: %s Index: %d \n",
                     table.getCountry(), table.getPeriod(), index);
         }
